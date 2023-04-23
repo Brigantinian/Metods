@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen" href="site.css">
+    <title>ProgHelp</title>
+    <style>
+      .outline {
+       border: 1px solid rgb(0, 255, 251);
+       padding: 0 10px;
+      }
+     </style>
+
+</head>
+<body>
+  <div id="block-body">
+
+    
+
+     <header>
+
+     // разметка для логотипа
+
+       <div class="logo">
+        <a href="index.html">
+          <span class="use">PROG</span>-<span class="web">HELP</span>.ru 
+        </a>   
+          
+       </div>  
+
+       // разметка для нашего меню
+
+       <div class="top-menu">
+         <ul>
+             <li><a class="clickMenu" href="#">Темы</a></li>
+             <li><a href="site1.html">Видеоуроки</a></li>
+             <li><a href="site2.html">Об авторах языков</a></li>
+             <li><a href="site3.html">Политика конфиденциальности</a></li>
+         </ul>  
+       </div> 
+
+       // блок с авторизацией 
+
+       <div class="block-top-auth">
+         <p><a href="site4.html">Регистрация</a></p>  
+       </div>  
+         
+     </header>
+
+      <div id="block-content"></div>  
+      <p>
+        
+        <font size="5" color="DarkOrchid" face=" Brush Script MT">Данный сайт разработан и предназначен для начинающих программистов . Цель сайта - помочь наичинающим программистам с выбором своего первого языка программирования.
+        </font>
+        
+    </p>
+    </div>
+      <div class="bg"></div>
+      <div class="bg bg2"></div>
+      <div class="bg bg3"></div>
+      
+    </div>
+  
+   <div class="middle1">
+   
+    
+    <div class="kartinka">
+        
+    </div>
+    <div class="middle2">
+      <div class="logo1">
+        <img src="img/pascal.jpg">
+      </div>
+      <font size="5" color="DarkOrchid" face=" Brush Script MT">
+        Паска́ль (англ. Pascal) — один из наиболее известных языков программирования, 
+        используется для обучения программированию в старших классах и на первых курсах вузов,
+        является основой для ряда других языков.
+      </font>
+      <div class="outline">
+        <div class="code1">
+          
+          <code>
+            uses GraphABC;<Br>
+            const<Br>
+              Size = 20;<Br>
+
+            var<Br>
+              Snake: List<Point>;<Br>
+
+            procedure Draw();<Br>
+            begin<Br>
+              ClearWindow();<Br>
+              Polyline(Snake.ToArray());<Br>
+              
+              var c := Snake.Count - 1;<Br>
+              Circle(Snake[c].X, Snake[c].Y, 5);<Br>
+              Redraw();<Br>
+            end;<Br>
+
+            procedure KeyDown(Key: integer);<Br>
+            begin<Br>
+              var c := Snake.Count - 2;<Br>
+              case Key of<Br>
+                VK_Left:<Br>
+                  begin<Br>
+                    Snake.RemoveAt(0);<Br>
+                    Snake.Add(new Point(Snake[c].X - Size, Snake[c].Y));<Br>
+                  end;<Br>
+                VK_Right:<Br>
+                  begin<Br>
+                    Snake.RemoveAt(0);<Br>
+                    Snake.Add(new Point(Snake[c].X + Size, Snake[c].Y));<Br>
+                  end;<Br>
+                VK_Up:<Br>
+                  begin<Br>
+                    Snake.RemoveAt(0);<Br>
+                    Snake.Add(new Point(Snake[c].X, Snake[c].Y  - Size));<Br>
+                  end;<Br>
+                VK_Down:<Br>
+                  begin<Br>
+                    Snake.RemoveAt(0);<Br>
+                    Snake.Add(new Point(Snake[c].X, Snake[c].Y  + Size));<Br>
+                  end;<Br>
+              end;<Br>
+              Draw();<Br>
+            end;<Br>
+
+            begin<Br>
+              LockDrawing();<Br>
+              SetSmoothingOff();<Br>
+              
+              Snake := new List<Point>();<Br>
+              for var x := 1 to 30 do<Br>
+                Snake.Add(new Point(x * Size, Size));<Br>
+              
+              Draw();<Br>
+              OnKeyDown := KeyDown;<Br>
+            end.<Br>
+          </code>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/1frW-tpKnT8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="middle3">
+      <div class="logo1">
+        <img src="img/python1">
+      </div>
+      <font size="5" color="DarkOrchid" face=" Brush Script MT">
+        Python  — высокоуровневый язык программирования общего назначения с динамической строгой типизацией и автоматическим управлением памятью, ориентированный на повышение производительности разработчика, читаемости кода и его качества, а также на обеспечение переносимости написанных на нём программ. Язык является полностью объектно-ориентированным в том плане, что всё является объектами[25.Необычной особенностью языка является выделение блоков кода пробельными отступами. Синтаксис ядра языка минималистичен, за счёт чего на практике редко возникает необходимость обращаться к документации
+      </font>
+      <div class="outline">
+        <div class="code1">
+          <code>
+            print ("Hello! My name is DICT_Bot")<br>
+  print ("I was created in 2021")<br>
+  name = input("Plase, remind me your name:")<br>
+  print ("What a great name you have,", name)<br>
+  print ("Let me gess your age. ")<br>
+  print ("Enter remainders of dividing your age by 3, 5 and 7.")<br>
+  remainder3 = int(input())<br>
+  remainder5 = int(input())<br>
+  remainder7 = int(input())<br>
+  age = (remainder3 * 70 + remainder5 * 21 + remainder7 * 15) % 105<br>
+  print ("Your age is " + str(age) + " that's a good time to start programming!")<br>
+  print ("Now i will prove to you that I can count to any number you want.")<br>
+  number = int(input())<br>
+  for i in range(number + 1):<br>
+      print(i, '!', sep='')<br>
+  print ("Let's test your programming knowledge.")<br>
+  print ("Why do we use methods?")<br>
+  print ("1. To repeat a statement multiple times.")<br>
+  print ("2. To decompose a program into several small subroutines.")<br>
+  print ("3. To determine the execution time of a program.")<br>
+  print ("4. To interrupt the execution of a program.")<br>
+  x = 0<br>
+  while x != 2:<br>
+       x = int(input())<br>
+       if x == 2:<br>
+              print("Completed, have a nice day!")<br>
+       else :<br>
+         print("Please, try again.")<br>
+  print("Congratulations, have a nice day!")<br>
+          </code>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/34Rp6KVGIEM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </div>
+      </div>
+    <div class="middle4">
+      <div class="logo1">
+        <img src="img/java_logo.png">
+      </div>
+      <font size="5" color="DarkOrchid" face=" Brush Script MT">
+        Java — строго типизированный объектно-ориентированный язык программирования общего назначения, разработанный компанией Sun Microsystems (в последующем приобретённой компанией Oracle). Разработка ведётся сообществом, организованным через Java Community Process; язык и основные реализующие его технологии распространяются по лицензии GPL. Права на торговую марку принадлежат корпорации Oracle.
+      </font>
+      <div class="outline">
+        <div class="code1">
+          <code>
+            import java.io.BufferedReader;<br>
+  import java.io.IOException;<br>
+  import java.io.InputStreamReader;<br>
+  
+  public class GameField {<br>
+  
+      static int [] canvas = {0,0,0,<br>
+                              0,0,0,<br>
+                              0,0,0};<br>
+  
+      //012, 345, 678, 036, 147, 258, 048, 246<br>
+      public static void main(String[] args){<br>
+  
+          boolean b;<br>
+          boolean isCurrentX = false;<br>
+          do {<br>
+              isCurrentX = !isCurrentX;<br>
+              drawCanvas();<br>
+              System.out.println("mark " + (isCurrentX ? "X" : "O"));<br>
+              int n = getNumber();<br>
+              canvas[n] = isCurrentX ? 1 : 2;<br>
+              b = !isGameOver(n);<br>
+              if (isDraw()){<br>
+                  System.out.println("Draw");<br>
+                  return;<br>
+              }<br>
+          } while (b);<br>
+          drawCanvas();<br>
+          System.out.println();<br>
+  
+          System.out.println("The winner is " + (isCurrentX ? "X" : "O") + "!");<br>
+      }<br>
+  
+      static int getNumber(){<br>
+          BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));<br>
+          while (true){<br>
+              try {<br>
+                  int n = Integer.parseInt(reader.readLine());<br>
+                  if (n >= 0 && n < canvas.length && canvas[n]==0){<br>
+                      return n;<br>
+                  }<br>
+                  System.out.println("Choose free cell and enter its number");<br>
+              } catch (NumberFormatException e) {<br>
+                  System.out.println("Please enter the number");<br>
+              } catch (IOException e) {<br>
+              }<br>
+          }<br>
+      }<br>
+  
+      static boolean isGameOver(int n){<br>
+          // 0 1 2<br>
+          // 3 4 5<br>
+          // 6 7 8<br>
+          //поиск совпадений по горизонтали<br>
+          int row = n-n%3; //номер строки - проверяем только её<br>
+          if (canvas[row]==canvas[row+1] &&<br>
+                  canvas[row]==canvas[row+2]) return true;<br>
+          //поиск совпадений по вертикали<br>
+          int column = n%3; //номер столбца - проверяем только его<br>
+          if (canvas[column]==canvas[column+3])<br>
+              if (canvas[column]==canvas[column+6]) return true;<br>
+          //мы здесь, значит, первый поиск не положительного результата<br>
+          //если значение n находится на одной из граней - возвращаем false<br>
+          if (n%2!=0) return false;<br>
+          //проверяем принадлежит ли к левой диагонали значение<br>
+          if (n%4==0){<br>
+              //проверяем есть ли совпадения на левой диагонали<br>
+              if (canvas[0] == canvas[4] &&<br>
+                      canvas[0] == canvas[8]) return true;<br>
+              if (n!=4) return false;<br>
+          }<br>
+          return canvas[2] == canvas[4] &&<br>
+                  canvas[2] == canvas[6];<br>
+      }<br>
+  
+      static void drawCanvas(){<br>
+          System.out.println("     |     |     ");<br>
+          for (int i = 0; i < canvas.length; i++) {<br>
+              if (i!=0){<br>
+                  if (i%3==0) {<br>
+                      System.out.println();<br>
+                      System.out.println("_____|_____|_____");<br>
+                      System.out.println("     |     |     ");<br>
+                  }<br>
+                  else<br>
+                      System.out.print("|");<br>
+              }<br>
+  
+              if (canvas[i]==0) System.out.print("  " + i + "  ");<br>
+              if (canvas[i]==1) System.out.print("  X  ");<br>
+              if (canvas[i]==2) System.out.print("  O  ");<br>
+          }<br>
+          System.out.println();<br>
+          System.out.println("     |     |     ");<br>
+      }<br>
+  
+      public static boolean isDraw() <br>{
+          for (int n : canvas) if (n==0) return false;<br>
+          return true;<br>
+      }<br>
+  }<br>
+          </code>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/U2OliQwRb6c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </div>
+    <div class="middle5">
+      <div class="logo1">
+        <img src="img/c++1.png">
+      </div>
+      <font size="5" color="DarkOrchid" face=" Brush Script MT">
+        C++ — компилируемый, статически типизированный язык программирования общего назначения.
+        Поддерживает такие парадигмы программирования, как процедурное программирование, объектно-ориентированное программирование, обобщённое программирование. Язык имеет богатую стандартную библиотеку, которая включает в себя распространённые контейнеры и алгоритмы, ввод-вывод, регулярные выражения, поддержку многопоточности и другие возможности. C++ сочетает свойства как высокоуровневых, так и низкоуровневых языков. В сравнении с его предшественником — языком C — наибольшее внимание уделено поддержке объектно-ориентированного и обобщённого программирования.
+      </font>
+      <div class="outline">
+        <div class="code1">
+          <code>
+            int j = 0 <br>
+            2  int b = 31;<br>
+            3  s:<br>
+            4  if (IsKey(" ")) {<br>
+            5    if (j == 0) {<br>
+            6      j = 5;<br>
+            7    }<br>
+            8  }<br>
+            9  int y = 0;<br>
+            10 if (j > 0) {<br>
+            11   y = 1;<br>
+            12   j = j - 1;<br>
+            13 }<br>
+            14 b = b - 1;<br>
+            15 if (b < 0) {<br>
+            16   b = 31;<br>
+            17 }<br>
+            18 Cls();<br>
+            19 At(15, y);<br>
+            20 Print("R");<br>
+            21 At(b, 0);<br>
+            22 Print("O");<br>
+            23 if (Screen(15, y) == "O") {<br>
+            24   At(10, 10);<br>
+            25   Print("Game Over");<br>
+            26   Input();<br>
+            27 }<br>
+            28 Sleep(0.05);<br>
+            29 Show();<br>
+            30 goto s;<br>
+          </code>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/5l9nxwh5Wiw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+   
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="underline">
+          <h3>Россия
+              © 2023 г.Ростов-на-Дону,Россия</h3>
+  </footer>
+
+</body>
+</html>
